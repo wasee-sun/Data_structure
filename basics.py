@@ -4,53 +4,53 @@
 # x1, num, y1, yx
 # any name can be variable
 
-1 # integer
-2.5 # float
-True # boolean
-[1, 2, 3, 4] # list
-(1, 2, 3, 4) # tuple
-{1, 2, 3, 4} # set
-x1 = "hello" # string
-x2 = "@123"
-print(x1 + " " + x2)
+# 1 # integer
+# 2.5 # float
+# True # boolean
+# [1, 2, 3, 4] # list
+# (1, 2, 3, 4) # tuple
+# {1, 2, 3, 4} # set
+# x1 = "hello" # string
+# x2 = "@123"
+# print(x1 + " " + x2)
 
-y1 = 2
-y2 = 7
-print(y1 + y2)
-print(y1 - y2)
-print(y1 * y2)
-print(y2 / y1)
-print(y2 // y1)
-print(y2 % y1)
+# y1 = 2
+# y2 = 7
+# print(y1 + y2)
+# print(y1 - y2)
+# print(y1 * y2)
+# print(y2 / y1)
+# print(y2 // y1)
+# print(y2 % y1)
 
-z1 = True
-z2 = False
+# z1 = True
+# z2 = False
 
-print(z1 and z2)
-print(z1 or z2)
-print(not z1)
+# print(z1 and z2)
+# print(z1 or z2)
+# print(not z1)
 
-i = 20
-if i == 20:
-    print("PERFECT NUMBER")
-if i < 10:
-    print("Number is short")
-elif i > 30:
-    print("Number is long")
-else:
-    print("Number is okay")
+# i = 20
+# if i == 20:
+#     print("PERFECT NUMBER")
+# if i < 10:
+#     print("Number is short")
+# elif i > 30:
+#     print("Number is long")
+# else:
+#     print("Number is okay")
     
-i = 20
-if i % 2 != 0:
-    if i < 10:
-        print(" 1 Number is short")
-    else:
-        print(" 1 Number is long")
-else:
-    if i < 10:
-        print(" 2 Number is short")
-    else:
-        print(" 2 Number is long")
+# i = 20
+# if i % 2 != 0:
+#     if i < 10:
+#         print(" 1 Number is short")
+#     else:
+#         print(" 1 Number is long")
+# else:
+#     if i < 10:
+#         print(" 2 Number is short")
+#     else:
+#         print(" 2 Number is long")
     
     
 x1 = ["A", "B", "C", "D", "E"]
@@ -61,11 +61,11 @@ x1 = ["A", "B", "C", "D", "E"]
 #     print(i)
     
     
-x1 = 20
-i = 0
-while i <= x1:
-    print(i)
-    i += 1
+# x1 = 20
+# i = 0
+# while i <= x1:
+#     print(i)
+#     i += 1
 
     
 #Task 
@@ -74,3 +74,31 @@ while i <= x1:
 # 3) while loop using a condition (inside for loop must be if else, print if once then else)
 # 4) Inside while loop there will be for loop and if else
  
+ 
+# x = 20
+# i = 5
+# while i <= x:
+#     if i < 10:
+#         i += 1
+#         continue
+#     elif i > 15:
+#         break
+#     print(i)
+#     i += 1
+# print(x1)
+    
+#Function
+def odd_even(x):
+    if x % 2 == 0:
+        print("The number is Even")
+    else:
+        print("The number is Odd")
+        
+# odd_even(15)
+
+
+def add(x, y, z):
+    z = x + y
+    
+add(3, 4)
+print(z)
