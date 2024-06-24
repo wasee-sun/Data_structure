@@ -1,0 +1,116 @@
+Booleans take 0 or 1 bit -> True or False
+Numerical datatypes
+whole numbers -> int, short, long (In python everything is long)
+letters  -> chr
+decimals -> float, double
+
+String -> sequence of ordered characters (not a primitive type)
+Allocate space, number of data, size of the data
+
+Pointers
+Instead of storing the entire data structure directly in a set of consecutive bits, we'll create an address that will point to where the structure, 
+or sometimes part of the structure is in memory.
+
+Strings are reference types where the values are stored
+Adding extra layer
+
+C++ memory management is necessary
+But in Java and Python it is handled automatically
+
+Array -> collection of data (each item identified by a key or index)
+
+Datastructures -> A collection with defined way of accessing and storing items
+"hello" -> 0, 1, 2, 3, 4 stored at these index respectively
+Index -> used to access specific data
+Cannot access data outside the index value
+
+Multidimensional Array -> Contains arrays within arrays
+
+Jagged Array -> Contain arrays within arrays of different sizes
+Inner array's can be any length 
+Jagged array's reduce wastage of memory, higher level language dont use this
+
+Immutable -> basic array data (it cannot be changed)
+Mutable / Resizable -> Give resizable versions
+ArrayList-> Comes with extra functionality
+
+Linear time algorithm -> The time it takes for the algorithm to run increases the size of the input
+Searching for an index of an item is a linear search
+Can decrease search time if data is already sorted
+
+Sorting -> Sorting data alphabeticaly or numericaly 
+
+Big O notation
+O(1) time taken for changing items at a specific index
+
+Each individual item moved to bigger array when adding a new item
+
+If you know nothing about the data to do anything with it, it takes linear time
+
+Sorting algorithm -> Insertion, Merge, Heap, Bubble, Bucket, Radix
+
+Linked list -> Linear datastructures (use pointers) #itertools.chain
+Pointer -> Holds an address in the memory location
+
+Access is the same as delete and search they traverse through the list
+
+Insert into changes the pointers
+
+Change a singly list to a doubly list is by adding a previous pointers
+
+Java cannot create list it creates Array list and linked list classes
+Python lists are not lists they are resizable list (no linked list)
+
+Linked list  -> to access an item we need to follow the nodes
+
+Stack -> Add and remove from the top (follows Last in, First out LIFO)
+Push adding and pop for removing (deals with last element)
+Ordered list (Mutable or resizable array)
+Runtime stack -> Tracks where error occured
+Great for reversing a string (Keeping track of the state)
+Have a linked list implementation
+
+Python does not have stack class but we use list as stacks
+
+Queues -> FIFO Enque to append front and Deque to remove from back
+Ordered list -> similar to stacks (no indexing with queues)
+Queues used in multithreading and for shared work (printer, disk)
+python -> put() and get() (targeted for threading)
+Priority Queue -> High priority will be dequeued before low priority
+
+Deque -> We can only remove the first or last element (Double ended Queue)
+
+Assosicative array -> Collection of key-value pairs (dictionary)
+Order is not important, because we use a key to access a value
+
+Hashing -> take raw data and mixing it to make something by combining them
+hash functions are one way not reversible (uses hash table)
+Encryption is related with hashing
+This is not encryption cause hashes cannot be reversed
+Python -> dictionary which stores a hash table of key value pairs
+Hash maps -> Working is quick by takes up more space (O(1) time taken)
+Should not have collisions (no sorting) (resolve it using seperate chaining)
+
+Set -> Collection of unique items
+Uses the same idea as hash table
+Store the object using the index, cares about membership of the value in set
+Frozenset-> cannot add items to a set (acts like a tuple)
+
+Tree datastructures -> collection of nodes (linked to many nodes)
+Root node -> starting node (contains links to other node)
+Child node -> linked to parent nodes and can be parent to other child nodes
+Siblings -> child with same parent
+
+Binary tree -> Adds constraint that there are only two child nodes
+Right node > Parent > Left node (always need to be sorted)
+To optimize it the tree must remain sorted
+
+Heaps -> collection of objects (fill in the level of the tree)
+Min heap -> bubbles up the lowest value to the top (shuffles the node)
+Max heap -> bubbles up the highes value to the top (shuffles the node)
+
+Graph -> colection of nodes pointing to various other nodes
+Instead of a linear structure like tree, graph can have multiple parent and child nodes
+
+Trie -> A tree type data structure that can be used to keep strings of the same prefix
+This tree is mainly used for autocompletion and finding words in dictionary
